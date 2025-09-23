@@ -1,0 +1,11 @@
+CREATE DATABASE Cine_DB;
+USE Cine_DB;
+
+CREATE TABLE Cartelera (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    director VARCHAR(50) NOT NULL,
+    anio INT NOT NULL,
+    duracion INT NOT NULL,
+    genero VARCHAR(30) NOT NULL
+);
