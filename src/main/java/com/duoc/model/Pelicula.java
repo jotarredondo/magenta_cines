@@ -8,13 +8,17 @@ public class Pelicula {
     private int duracion;
     private String genero;
 
-    public Pelicula(int id, String titulo, String director, int anio, int duracion, String genero) {
-        this.id = id;
+    public Pelicula(String titulo, String director, int anio, int duracion, String genero) {
         this.titulo = titulo;
         this.director = director;
         this.anio = anio;
         this.duracion = duracion;
         this.genero = genero;
+    }
+
+    public Pelicula(int id, String titulo, String director, int anio, int duracion, String genero) {
+        this(titulo, director, anio, duracion, genero);
+        this.id = id;
     }
 
     public int getId() {
